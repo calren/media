@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".CompositionActivityKotlin">
+
+  <androidx.media3.ui.PlayerView
+    android:id="@+id/composition_player_view"
+    android:layout_width="match_parent"
+    android:layout_height="300dp" />
+
+  <com.google.android.material.chip.ChipGroup
+    android:id="@+id/configuration_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+    <com.google.android.material.chip.Chip
+      android:id="@+id/fast_speed_chip"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:checkable="true"
+      android:text="Fast speed" />
+    <com.google.android.material.chip.Chip
+      android:id="@+id/dizzy_crop_chip"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:checkable="true"
+      android:text="Dizzy crop effect" />
+    <com.google.android.material.chip.Chip
+      android:id="@+id/grayscale_chip"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:checkable="true"
+      android:text="Grayscale" />
+    <com.google.android.material.chip.Chip
+      android:id="@+id/image_chip"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:checkable="true"
+      android:text="Add image" />
+    <com.google.android.material.chip.Chip
+      android:id="@+id/trim_chip"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:checkable="true"
+      android:text="Trim first 2 seconds" />
+  </com.google.android.material.chip.ChipGroup>
+
+</LinearLayout>
